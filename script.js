@@ -21,3 +21,16 @@ function getLargest(arr) {
 }
 
 console.log(getLargest(digits));
+
+function getCountBiggerThanFirst(arr) {
+  let count = 0;
+  const first = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > first) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(getCountBiggerThanFirst(digits));
