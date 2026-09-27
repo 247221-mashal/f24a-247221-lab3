@@ -1,0 +1,8 @@
+header {
+  background-color: blue; /* Replace with your color name for digit 1 */
+  padding: 10px;
+}
+
+header h1 {
+  color: white;
+}
