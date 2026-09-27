@@ -34,3 +34,14 @@ function getCountBiggerThanFirst(arr) {
 }
 
 console.log(getCountBiggerThanFirst(digits));
+
+const showBtn = document.getElementById('show');
+const totalP = document.getElementById('total');
+const bigP = document.getElementById('big');
+const aboveP = document.getElementById('above');
+
+showBtn.addEventListener('click', function () {
+  totalP.textContent = getTotal(digits);
+  bigP.textContent = getLargest(digits);
+  aboveP.textContent = getCountBiggerThanFirst(digits);
+});
